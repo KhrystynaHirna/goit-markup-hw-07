@@ -22,3 +22,26 @@
   margin-top: 0;
   margin-bottom: 0;
 }
+.current {
+  color: var(--accent-color);
+  padding: 32px 0;  
+  position: relative;
+}
+.primary-button {
+  background-color: var(--accent-color);
+  color: var(--body-background-color);
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+
+  box-shadow: var(--primary-button-shadow);
+  border: none;
+  border-radius: 4px;
+  padding: 10px 32px;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  margin-top: 0;
+  cursor: pointer;
+}

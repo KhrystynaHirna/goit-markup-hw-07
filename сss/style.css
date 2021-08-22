@@ -214,7 +214,7 @@
 .adwantage-item {
   max-width: 270px;
 }
-.advantage-icon-group {
+.advantage-iten__icon {
   background-color: var(--team-background-color);
   color: currentColor;
   width: 270px;
@@ -231,7 +231,7 @@
   text-align: center;
   justify-content: center;
 }
-.advantage {
+.advantage-title {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.03em;
