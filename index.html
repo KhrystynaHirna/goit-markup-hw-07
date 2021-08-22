@@ -10,20 +10,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-  <link rel="stylesheet" href="./сss/style.css">
+ <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body class="body">
 
   <!-- Шапка сторінки -->
   <header class="page-header">
-    <div class="container main-nav">
-      <a href="/index.html" class="logo link">Web<span class="black-color">Studio</span></a>
+    <div class="page-header__container">
+      <a href="/index.html" class="logo">Web<span class="logo__part">Studio</span></a>
       <nav>
-        <ul class="site-nav list">
-          <li class="item"><a href="./index.html" class="link current">Студия</a></li>
-          <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
-          <li class="item"><a href="" class="link">Контакты</a></li>
+        <ul class="navigation-list">
+          <li class="navigation-item"><a href="./index.html" class="navigation-item__link current__link">Студия</a></li>
+          <li class="navigation-item"><a href="./portfolio.html" class="navigation-item__link">Портфолио</a></li>
+          <li class="navigation-item"><a href="" class="navigation-item__link">Контакты</a></li>
         </ul>
       </nav>
       <ul class="header-info list">
@@ -477,7 +477,7 @@
         </svg>
         </div>
         
-        <div class="form-field-comment"> 
+        <div class="form-field-comment">
           <label class="form-field-title" for="comment">Комментарий</label>
           <textarea class="commentarea" name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
         </div>
