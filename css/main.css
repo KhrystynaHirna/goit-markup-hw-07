@@ -1,3 +1,56 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.body {
+  background-color: var(--body-background-color);
+  color: var(--primary-text-color);
+  font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+:root {
+  --primary-text-color: #212121;
+  --paragraph-text-color: #757575;
+  --accent-color: #2196f3;
+  --body-background-color: #ffffff;
+  --logo-black-color: #000000;
+  --footor-background-color: #2f303a;
+  --team-background-color: #f5f4fa;
+  --footer-info-color: rgba(255, 255, 255, 0.6);
+  --primary-button-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --team-card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  --portfolio-card-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  --secondary-button-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  --card-border-color: 1px solid #eeeeee;
+  --icon-color: #afb1b8;
+  --icon-background-color: rgba(255, 255, 255, 0.1);
+  --header-border-color: 1px solid #ececec;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .page-header {
   border-bottom: var(--header-border-color);
 }
@@ -71,5 +124,59 @@
   border-radius: 2px;
   position: absolute;
   bottom: -1px;
+}
+
+.header-info {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  padding: 0;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info-item {
+  color: var(--paragraph-text-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info-item:hover, .info-item:focus {
+  color: var(--accent-color);
+}
+
+.info-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.info-link {
+  color: var(--paragraph-text-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: color 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function);
+}
+
+.info-link:hover, .info-link:focus {
+  color: var(--accent-color);
+}
+
+.info-icon {
+  fill: currentColor;
+  margin-right: 10px;
 }
 /*# sourceMappingURL=main.css.map */

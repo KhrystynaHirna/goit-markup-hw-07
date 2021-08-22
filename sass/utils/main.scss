@@ -1,4 +1,8 @@
+@import '../base/normalize';
+@import './variables';
+
 // header-block
+
 .page-header {
     border-bottom: var(--header-border-color);
 }
@@ -62,3 +66,43 @@
   bottom: -1px; 
  }
 }
+// header-info block
+.header-info {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+
+  padding: 0;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.info-item {
+  color: var(--paragraph-text-color);
+  display: flex;
+  align-items: center;
+
+  &:hover, &:focus {
+    color: var(--accent-color);  
+  }
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+.info-link {
+  color: var(--paragraph-text-color);
+  display: flex;
+  align-items: center;
+  transition: color 250ms var(--timing-function);
+
+  &:hover, &:focus {
+  color: var(--accent-color);  
+  }
+}
+.info-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+// First-section block
+
