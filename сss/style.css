@@ -214,7 +214,7 @@
 .adwantage-item {
   max-width: 270px;
 }
-.advantage-iten__icon {
+.advantage-item__icon {
   background-color: var(--team-background-color);
   color: currentColor;
   width: 270px;
