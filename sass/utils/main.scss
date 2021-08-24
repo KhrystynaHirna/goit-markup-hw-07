@@ -382,7 +382,7 @@
 .address__item:not(:last-child) {
   margin-bottom: 9px;
 }
-.address__item--physical- {
+.address__item--physical {
   color: var(--body-background-color);
   margin-top: 0 0 9px;
   transition: color 250ms var(--timing-function);
@@ -424,6 +424,12 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+
+ &:not(:last-child) {
+   margin-right: 10px;
+ }
+}
+.join-icon__link {
   fill: var(--body-background-color);
   background-color: var(--icon-background-color);
   transition: background-color 250ms var(--timing-function);
@@ -431,9 +437,5 @@
   &:hover, &:focus {
   background-color: var(--accent-color);
   fill: var(--body-background-color);
- } 
- &:not(:last-child) {
-   margin-right: 10px;
- }
 }
-
+}
