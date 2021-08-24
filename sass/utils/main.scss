@@ -244,7 +244,8 @@
 .team-section {
   background-color: var(--team-background-color);
   padding: 94px 0;
-
+}
+.team-section__container {
   @extend .container;
 }
 .team {
@@ -290,18 +291,23 @@
 .team__icon--item {
   width: 44px;
   height: 44px;
+  
+  &:not(:last-child) {
+  margin-right: 10px;
+  }
+}
+.team__icon--link {
+  width: 44px;
+  height: 44px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+
   fill: var(--icon-color);
   transition: fill 250ms var(--timing-function), background-color 250ms var(--timing-function);
 
-  &:not(:last-child) {
-  margin-right: 10px;
-  }
-  &:hover,
-  &:focus {
+  &:hover, &:focus {
   background-color: var(--accent-color);
   fill: var(--body-background-color);
   }

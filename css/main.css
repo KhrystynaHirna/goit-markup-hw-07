@@ -31,7 +31,7 @@
   font-family: 'Roboto', 'Arial', sans-serif;
 }
 
-.container, .page-header__container, .advantage-section, .product-section, .team-section {
+.container, .page-header__container, .advantage-section, .product-section, .team-section__container {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
@@ -393,6 +393,15 @@
 .team__icon--item {
   width: 44px;
   height: 44px;
+}
+
+.team__icon--item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team__icon--link {
+  width: 44px;
+  height: 44px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -408,11 +417,7 @@
   transition: fill 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
 
-.team__icon--item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.team__icon--item:hover, .team__icon--item:focus {
+.team__icon--link:hover, .team__icon--link:focus {
   background-color: var(--accent-color);
   fill: var(--body-background-color);
 }
