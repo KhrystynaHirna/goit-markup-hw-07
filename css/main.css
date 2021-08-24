@@ -31,7 +31,7 @@
   font-family: 'Roboto', 'Arial', sans-serif;
 }
 
-.container, .page-header__container, .advantage-section, .product-section, .team-section__container {
+.container, .page-header__container, .advantage-section, .product-section, .team-section__container, .clients-logo__list {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
@@ -420,5 +420,61 @@
 .team__icon--link:hover, .team__icon--link:focus {
   background-color: var(--accent-color);
   fill: var(--body-background-color);
+}
+
+.clients-section {
+  padding-top: 94px;
+}
+
+.clients-logo__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 94px;
+}
+
+.clients-logo__link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  fill: var(--icon-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: fill 250ms var(--timing-function), border-color 250ms var(--timing-function);
+  transition: fill 250ms var(--timing-function), border-color 250ms var(--timing-function);
+}
+
+.clients-logo__link:hover, .clients-logo__link:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.footer {
+  background-color: var(--footor-background-color);
+  padding: 60px 0;
+}
+
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 /*# sourceMappingURL=main.css.map */

@@ -312,3 +312,53 @@
   fill: var(--body-background-color);
   }
 }
+
+// Clients-section
+
+.clients-section {
+  padding-top: 94px;
+
+}
+.clients-logo__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 94px;
+
+  @extend .container;
+}
+.clients-logo__link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  fill: var(--icon-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: fill 250ms var(--timing-function),
+  border-color 250ms var(--timing-function);
+
+&:hover, &:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+}
+// Footer-section
+
+.footer {
+  background-color: var(--footor-background-color);
+  padding: 60px 0;
+}
+.footer-container {
+  display: flex;
+  align-items: baseline;
+
+  @extend .container;
+}
+.address-container {
+  margin-right: 70px;
+}
