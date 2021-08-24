@@ -347,7 +347,7 @@
   border-radius: 50%;
   fill: var(--icon-color);
   transition: fill 250ms var(--timing-function),
-    background-coor 250ms var(--timing-function);
+   background-color 250ms var(--timing-function);
 }
 .team-icon-item:not(:last-child) {
   margin-right: 10px;

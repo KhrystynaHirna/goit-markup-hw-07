@@ -22,7 +22,7 @@
   margin-top: 0;
   margin-bottom: 0;
 }
-.current {
+.current-link {
   color: var(--accent-color);
   padding: 32px 0;  
   position: relative;
@@ -44,4 +44,14 @@
   text-align: center;
   margin-top: 0;
   cursor: pointer;
+}
+
+.secondary-title {
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-top: 0;
+  margin-bottom: 50px;
 }
