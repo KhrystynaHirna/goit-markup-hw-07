@@ -31,18 +31,18 @@
   font-family: 'Roboto', 'Arial', sans-serif;
 }
 
-.container, .page-header__container, .advantage-section, .product-section, .team-section__container, .clients-logo__list {
+.container, .page-header__container, .advantage-section, .product-section, .team-section__container, .clients-logo__list, .footer-container {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
-.list, .navigation, .advantages, .product, .team {
+.list, .navigation, .advantages, .product, .team, .address__list {
   list-style: none;
   margin: 0;
 }
 
-.link, .logo, .navigation__link, .header-info__link {
+.link, .logo, .navigation__link, .header-info__link, .address__item--physical-, .address__item--info {
   text-decoration: none;
   margin-top: 0;
   margin-bottom: 0;
@@ -476,5 +476,97 @@
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+}
+
+.address-container {
+  margin-right: 70px;
+}
+
+.logo__part--footer {
+  color: var(--body-background-color);
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.address__list {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  padding: 0;
+  width: 231px;
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__item--physical- {
+  color: var(--body-background-color);
+  margin-top: 0 0 9px;
+  -webkit-transition: color 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function);
+}
+
+.address__item--physical-:hover, .address__item--physical-:focus {
+  color: var(--accent-color);
+}
+
+.address__item--info {
+  color: var(--footer-info-color);
+  margin: 0 0 9px;
+  -webkit-transition: color 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function);
+}
+
+.address__item--info:hover, .address__item--info:focus {
+  color: var(--accent-color);
+}
+
+.join-title {
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--body-background-color);
+}
+
+.join-icon__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 0;
+}
+
+.join-icon__item {
+  width: 44px;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  fill: var(--body-background-color);
+  background-color: var(--icon-background-color);
+  -webkit-transition: background-color 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function);
+}
+
+.join-icon__item:hover, .join-icon__item:focus {
+  background-color: var(--accent-color);
+  fill: var(--body-background-color);
+}
+
+.join-icon__item:not(:last-child) {
+  margin-right: 10px;
 }
 /*# sourceMappingURL=main.css.map */
