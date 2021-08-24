@@ -37,7 +37,7 @@
 
 // navigation-block
 
-.navigation-list {
+.navigation {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -48,10 +48,10 @@
 
   @extend .list;
 }
-.navigation-item:not(:last-child) {
+.navigation__item:not(:last-child) {
   margin-right: 50px;
 }
-.navigation-item__link {
+.navigation__link {
   color: var(--primary-text-color);
   display: block;
   transition: color 250ms var(--timing-function);
@@ -84,7 +84,7 @@
   display: flex;
   align-items: center;
 }
-.info-item {
+.header-info__item {
   color: var(--paragraph-text-color);
   display: flex;
   align-items: center;
@@ -96,7 +96,7 @@
     margin-right: 50px;
   }
 }
-.info-link {
+.header-info__link {
   color: var(--paragraph-text-color);
   display: flex;
   align-items: center;
@@ -107,7 +107,7 @@
   }
   @extend .link;
 }
-.info-icon {
+.header-info__icon {
   fill: currentColor;
   margin-right: 10px;
 }
