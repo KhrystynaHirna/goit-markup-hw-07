@@ -452,50 +452,50 @@
       <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
       
   <!-- Модальна форма -->
-      <form action="modal-form">
+      <form action="modal__form">
         <div class="form-field">  
-          <label class="form-field-title" for="name">Имя</label>
-          <input class="form-field-input" type="text" name="name" id="name">
-           <svg class="overlay-modal" width="18px" height="18px">
+          <label class="form-field__title" for="name">Имя</label>
+          <input class="form-field__input" type="text" name="name" id="name">
+           <svg class="form-field__icon" width="18px" height="18px">
             <use href="./img/sprite.svg#icon-modal-person"></use>
           </svg>
         </div>
         
         <div class="form-field">
-        <label class="form-field-title" for="tel">Телефон</label>
-        <input class="form-field-input" type="tel" name="tel" id="tel" >
-        <svg class="overlay-modal" width="18px" height="18px">
+        <label class="form-field__title" for="tel">Телефон</label>
+        <input class="form-field__input" type="tel" name="tel" id="tel" >
+        <svg class="form-field__icon" width="18px" height="18px">
           <use href="./img/sprite.svg#icon-modal-phone"></use>
         </svg>
         </div>
         
         <div class="form-field">
-          <label class="form-field-title" for="mail">Почта</label>
-        <input class="form-field-input" type="email" name="mail" id="mail">
-        <svg class="overlay-modal" width="18px" height="18px">
+          <label class="form-field__title" for="mail">Почта</label>
+        <input class="form-field__input" type="email" name="mail" id="mail">
+        <svg class="form-field__icon" width="18px" height="18px">
           <use href="./img/sprite.svg#icon-modal-email"></use>
         </svg>
         </div>
         
-        <div class="form-field-comment">
-          <label class="form-field-title" for="comment">Комментарий</label>
-          <textarea class="commentarea" name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
+        <div class="form-field__comment">
+          <label class="form-field__title" for="comment">Комментарий</label>
+          <textarea class="form-field__commentarea" name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
         </div>
         
-        <div class="form-field-check">
-          <label class="form-field-policy" class="check-field">
-            <input class="checkbox-input" type="checkbox" name="polisy">
-            <span class="check-icon">
+        <div class="form-field__check">
+          <label class="form-field__policy" class="check-field">
+            <input class="form-field__checkbox" type="checkbox" name="polisy">
+            <span class="form-field__checkbox--icon">
               <svg width="11px" height="8px">
                 <use href="./img/sprite.svg#icon-modal-check"></use>
               </svg>
             </span>
-            <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю <a href="" class="policy-link">Условия
+            <span class="form-field__checkbox--text">Соглашаюсь с рассылкой и принимаю <a href="" class="form-field__checkbox--link">Условия
                 договора</a></span>
           </label>
         </div>
           
-          <div class="form-field-button">
+          <div class="form-field__button">
              <button class="primary-button" type="submit">Отправить</button>
           </div>
   </div>
