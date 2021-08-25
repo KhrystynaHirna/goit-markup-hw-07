@@ -669,3 +669,78 @@
   justify-content: center;
 }
 
+// Portfolio block
+
+.portfolio-section {
+  padding: 94px 0;
+
+  @extend .container;
+}
+.portfolio-navigation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  padding-left: 0;
+
+  @extend .list;
+}
+
+// Portfolio-button
+
+.portfolio-navigation__button {
+
+ &:not(:last-child) {
+   margin-right: 8px;
+ }
+}
+.portfolio-navigation__button--secondary {
+  background: var(--team-background-color);
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  min-width: 73px;
+  border-radius: 4px;
+  border: transparent;
+
+  padding: 6px 22px;
+  margin-top: 0;
+  cursor: pointer;
+
+  transition: all 250ms var(--timing-function);
+
+  &:hover, &:focus {
+    background: var(--accent-color);
+  color: var(--body-background-color);
+  box-shadow: var(--secondary-button-shadow); 
+  }
+}
+.portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding-right: 0;
+  padding-left: 0;
+
+  @extend .list;
+}
+.portfolio-items__card {
+
+  &:not(:nth-child(-n + 3)) {
+  margin-top: 30px;
+  }
+  &:not(:nth-child(3n)) {
+  margin-right: 30px;
+  }
+}
+.portfolio-items__link {
+  text-decoration: none;
+  display: block;
+
+  transition: transform 250ms var(--timing-function),
+    opasity 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function);
+}
