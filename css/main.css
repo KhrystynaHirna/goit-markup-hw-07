@@ -87,6 +87,10 @@
   pointer-events: none;
 }
 
+img {
+  display: block;
+}
+
 .page-header {
   border-bottom: var(--header-border-color);
 }
@@ -932,5 +936,73 @@
   transition: opasity 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function), -webkit-box-shadow 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function), opasity 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function), opasity 250ms var(--timing-function), box-shadow 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function), -webkit-box-shadow 250ms var(--timing-function);
+}
+
+.portfolio-items__link:hover, .portfolio-items__link:focus {
+  -webkit-box-shadow: var(--portfolio-card-shadow);
+          box-shadow: var(--portfolio-card-shadow);
+}
+
+.portfolio-items__link:hover .portfolio-items__overlay,
+.portfolio-items__link:focus .portfolio-items__overlay {
+  opacity: 1;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.portfolio-items__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-items__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(33, 150, 243, 0.9)), to(rgba(33, 150, 243, 0.9)));
+  background-image: linear-gradient(to right, rgba(33, 150, 243, 0.9), rgba(33, 150, 243, 0.9));
+  opacity: 0;
+  -webkit-transition: -webkit-transform 250ms var(--timing-function);
+  transition: -webkit-transform 250ms var(--timing-function);
+  transition: transform 250ms var(--timing-function);
+  transition: transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
+}
+
+.portfolio-items__overlay--text {
+  padding: 63px 24px;
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: var(--body-background-color);
+}
+
+.portfolio-items__card--description {
+  border: var(--card-border-color);
+  border-top: none;
+}
+
+.portfolio-items__card--name {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  padding: 20px 24px 4px;
+  margin-top: 0;
+  margin-bottom: 0;
+  min-width: 322px;
+  color: var(--primary-text-color);
+}
+
+.portfolio-items__card--text {
+  color: var(--paragraph-text-color);
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  padding: 0 24px 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  min-width: 322px;
 }
 /*# sourceMappingURL=main.css.map */
