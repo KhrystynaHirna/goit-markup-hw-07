@@ -45,7 +45,6 @@
   margin-top: 0;
   cursor: pointer;
 }
-
 .secondary-title {
   font-size: 36px;
   line-height: 1.2;
@@ -54,4 +53,8 @@
 
   margin-top: 0;
   margin-bottom: 50px;
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }

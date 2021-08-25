@@ -378,9 +378,9 @@
         <a href="/index.html" class="logo">Web<span class="logo__part--footer">Studio</span></a>
         <address>
           <ul class="address__list">
-            <li class="address__item"><a href="" class="address__item--physical-">г. Киев, пр-т Леси Украинки, 26</a></li>
-            <li class="address__item"><a href="info@example.com" class="address__item--info ">info@example.com</a></li>
-            <li class="address__item"><a href="tel:+380991111111" class="address__item--info">+38 099 111 11 11</a></li>
+            <li class="address__item"><a href="" class="address__link--physical-">г. Киев, пр-т Леси Украинки, 26</a></li>
+            <li class="address__item"><a href="info@example.com" class="address__link--info ">info@example.com</a></li>
+            <li class="address__item"><a href="tel:+380991111111" class="address__link--info">+38 099 111 11 11</a></li>
           </ul>
         </address>
       </div>
@@ -426,12 +426,12 @@
 
       <div class="follow">
         <h3 class="join-title">Подпишитесь на рассылку</h3>
-        <form class="follow-form">
-          <label class="follow-label">
-            <input type="email" class="form-input" name="mail" required placeholder="E-mail">
+        <form class="follow__form">
+          <label>
+            <input type="email" class="follow__input" name="mail" required placeholder="E-mail">
           </label>
-          <button class="primary-button" type="submit"><span class="follow-text">Подписаться</span> 
-            <svg class="icon-send" width="24px" height="24px">
+          <button class="primary-button" type="submit"><span class="follow__text">Подписаться</span> 
+            <svg class="follow__icon" width="24px" height="24px">
               <use href="./img/sprite.svg#icon-modal-send"></use>
             </svg></button>
         </form>
@@ -442,14 +442,14 @@
   </footer>
 
   <!-- Модальне вікно -->
-  <div class="backdrop is-hidden" data-modal>
+  <div class="backdrop" data-modal>
     <div class="modal">
       <button type="button" class="close-button" data-modal-close>
-          <svg class="icon-close" width="18px" height="18px">
+          <svg class="close-button__icon" width="18px" height="18px">
           <use href="./img/sprite.svg#icon-close"></use>
         </svg>
       </button>
-      <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+      <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
       
   <!-- Модальна форма -->
       <form action="modal-form">
