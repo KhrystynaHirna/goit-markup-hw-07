@@ -53,6 +53,7 @@
   margin-right: 50px;
 }
 .navigation__link {
+  padding: 32px 0;
   color: var(--primary-text-color);
   display: block;
   transition: color 250ms var(--timing-function);
@@ -60,20 +61,6 @@
   &:hover, &:focus {
   color: var(--accent-color);  
   }
- & .current-link {
-  position: relative;
-}
-
- & .current-link::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 4px;
-  background: var(--accent-color);
-  border-radius: 2px;
-  position: absolute;
-  bottom: -1px; 
- }
     @extend .link;
 }
 
@@ -353,7 +340,7 @@
   background-color: var(--footor-background-color);
   padding: 60px 0;
 }
-.footer-container {
+.footer__container {
   display: flex;
   align-items: baseline;
 
@@ -368,7 +355,7 @@
   display: inline-block;
   margin-bottom: 20px;
 }
-.address__list {
+.address {
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
