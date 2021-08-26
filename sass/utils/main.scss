@@ -138,9 +138,10 @@
 // Advantage-section block
 
 .advantage-section {
-    padding: 94px 0 47px 0;
-
-    @extend .container;
+    padding: 94px 0 47px 0; 
+}
+.advantage-section__container {
+  @extend .container; 
 }
 .advantages {
   padding: 0;
@@ -191,7 +192,8 @@
 
 .product-section {
   padding: 47px 0 94px 0;
-
+}
+.product-section__container {
   @extend .container;
 }
 .product {
@@ -433,6 +435,13 @@
 }
 .follow__form {
   display: flex;
+
+  & .primary-button {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-left: 12px;
+  }
 }
 .follow__input {
   width: 358px;
@@ -658,8 +667,9 @@
 // Portfolio block
 
 .portfolio-section {
-  padding: 94px 0;
-
+  padding: 94px 0; 
+}
+.portfolio-section__container {
   @extend .container;
 }
 .portfolio-navigation {

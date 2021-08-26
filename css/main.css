@@ -31,7 +31,7 @@
   font-family: 'Roboto', 'Arial', sans-serif;
 }
 
-.container, .page-header__container, .advantage-section, .product-section, .team-section__container, .clients-logo__list, .footer__container, .portfolio-section {
+.container, .page-header__container, .advantage-section__container, .product-section__container, .team-section__container, .clients-logo__list, .footer__container, .portfolio-section__container {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
@@ -585,6 +585,17 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.follow__form .primary-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  margin-left: 12px;
 }
 
 .follow__input {
