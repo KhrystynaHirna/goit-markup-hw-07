@@ -1,0 +1,19 @@
+// Product-section block
+
+.product-section {
+  padding: 47px 0 94px 0;
+}
+.product-section__container {
+  @extend .container;
+}
+.product {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  padding-right: 0;
+
+  @extend .list;
+}
+.product__item {
+  position: relative;
+}

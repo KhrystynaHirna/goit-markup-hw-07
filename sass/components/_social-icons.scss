@@ -1,0 +1,36 @@
+
+//  social-icon block
+
+.team__icon {
+  list-style: none;
+  padding: 0 32px;
+  margin-bottom: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team__icon--item {
+  width: 44px;
+  height: 44px;
+  
+  &:not(:last-child) {
+  margin-right: 10px;
+  }
+}
+.team__icon--link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  fill: var(--icon-color);
+  transition: fill 250ms var(--timing-function), background-color 250ms var(--timing-function);
+
+  &:hover, &:focus {
+  background-color: var(--accent-color);
+  fill: var(--body-background-color);
+  }
+}

@@ -1,0 +1,19 @@
+// Advantage-icons block
+
+.advantage__icon {
+  background-color: var(--team-background-color);
+  color: currentColor;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 0;
+}
+.advantage__svg {
+  text-align: center;
+  justify-content: center;
+}

@@ -1,0 +1,28 @@
+// navigation-block
+
+.navigation {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+
+  display: flex;
+  margin-left: 93px;
+  align-items: center;
+
+  @extend .list;
+}
+.navigation__item:not(:last-child) {
+  margin-right: 50px;
+}
+.navigation__link {
+  padding: 32px 0;
+  color: var(--primary-text-color);
+  display: block;
+  transition: color 250ms var(--timing-function);
+
+  &:hover, &:focus {
+  color: var(--accent-color);  
+  }
+    @extend .link;
+}

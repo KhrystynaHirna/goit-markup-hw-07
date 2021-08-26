@@ -1,0 +1,39 @@
+
+// Join-section
+
+.join-title {
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--body-background-color);
+}
+.join-icon__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+}
+.join-icon__item {
+ 
+ &:not(:last-child) {
+   margin-right: 10px;
+ }
+}
+.join-icon__link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  fill: var(--body-background-color);
+  background-color: var(--icon-background-color);
+  transition: background-color 250ms var(--timing-function);
+
+  &:hover, &:focus {
+  background-color: var(--accent-color);
+  fill: var(--body-background-color);
+ }
+}

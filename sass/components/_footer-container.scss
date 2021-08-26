@@ -1,0 +1,12 @@
+// Footer-section
+
+.footer {
+  background-color: var(--footor-background-color);
+  padding: 60px 0;
+}
+.footer__container {
+  display: flex;
+  align-items: baseline;
+
+  @extend .container;
+}

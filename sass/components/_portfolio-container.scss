@@ -1,0 +1,9 @@
+
+// Portfolio container
+
+.portfolio-section {
+  padding: 94px 0; 
+}
+.portfolio-section__container {
+  @extend .container;
+}
