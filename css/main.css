@@ -381,10 +381,10 @@ img {
   margin-bottom: 16px;
 }
 
-.social__icons {
-  list-style: none;
+.social-icons {
   padding: 0 32px;
   margin-bottom: 30px;
+  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -394,11 +394,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.social-icons__item {
-  width: 44px;
-  height: 44px;
 }
 
 .social-icons__item:not(:last-child) {

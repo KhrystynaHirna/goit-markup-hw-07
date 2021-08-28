@@ -1,19 +1,17 @@
 
 //  social-icons block
 
-.social__icons {
-  list-style: none;
+.social-icons {
   padding: 0 32px;
   margin-bottom: 30px;
+  list-style: none;
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .social-icons__item {
-  width: 44px;
-  height: 44px;
-  
+
   &:not(:last-child) {
   margin-right: 10px;
   }
