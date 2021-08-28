@@ -367,56 +367,54 @@
             </a>
           </li>
         </ul>
+        </div>
         </section>
-
-      </div>
-      
 
   </main>
 
   <!--Підвал сторінки -->
   <footer class="footer">
     <div class="footer__container">
-      <div class="address-container">
+      <div class="footer__item--first">
         <a href="/index.html" class="logo">Web<span class="logo__part--footer">Studio</span></a>
-        <address>
-          <ul class="address">
-            <li class="address__item"><a href="" class="address__link--physical">г. Киев, пр-т Леси Украинки, 26</a></li>
-            <li class="address__item"><a href="info@example.com" class="address__link--info">info@example.com</a></li>
-            <li class="address__item"><a href="tel:+380991111111" class="address__link--info">+38 099 111 11 11</a></li>
+        <address class="address">
+          <ul class="address__list">
+            <li class="address__item"><a href="" class="address__link address__link--white">г. Киев, пр-т Леси Украинки, 26</a></li>
+            <li class="address__item"><a href="info@example.com" class="address__link address__link--info">info@example.com</a></li>
+            <li class="address__item"><a href="tel:+380991111111" class="address__link address__link--info">+38 099 111 11 11</a></li>
           </ul>
         </address>
       </div>
 
-      <div>
-        <h3 class="join-title">Присоединяйтесь</h3>
-        <ul class="join-icon__list">
-          <li class="join-icon__item">
-            <a href="" class="join-icon__link">
+      <div class="footer__item">
+        <h3 class="footer__title">Присоединяйтесь</h3>
+        <ul class="social-icons footer__social-icons">
+          <li class="social-icons__item">
+            <a href="" class="social-icons__link footer__social-icons--link">
               <svg width="20px" height="20px">
                 <use href="./img/sprite.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
 
-          <li class="join-icon__item">
-            <a href="" class="join-icon__link">
+          <li class="social-icons__item">
+            <a href="" class="social-icons__link footer__social-icons--link">
               <svg width="20px" height="20px">
                 <use href="./img/sprite.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
 
-          <li class="join-icon__item">
-            <a href="" class="join-icon__link">
+          <li class="social-icons__item">
+            <a href="" class="social-icons__link footer__social-icons--link">
               <svg width="20px" height="20px">
                 <use href="./img/sprite.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
 
-          <li class="join-icon__item">
-            <a href="" class="join-icon__link">
+          <li class="social-icons__item">
+            <a href="" class="social-icons__link footer__social-icons--link">
               <svg width="20px" height="20px">
                 <use href="./img/sprite.svg#icon-linkedin"></use>
               </svg>
@@ -427,14 +425,14 @@
         </ul>
       </div>
 
-      <div class="follow">
-        <h3 class="join-title">Подпишитесь на рассылку</h3>
-        <form class="follow__form">
+      <div class="footer__item--third">
+        <h3 class="footer__title">Подпишитесь на рассылку</h3>
+        <form class="subscribe-form">
           <label>
-            <input type="email" class="follow__input" name="mail" required placeholder="E-mail">
+            <input type="email" class="subscribe-form__input" name="mail" required placeholder="E-mail">
           </label>
-          <button class="primary-button" type="submit"><span class="follow__text">Подписаться</span> 
-            <svg class="follow__icon" width="24px" height="24px">
+          <button class="primary-button" type="submit"><span class="subscribe-form__text">Подписаться</span> 
+            <svg class="subscribe-form__icon" width="24px" height="24px">
               <use href="./img/sprite.svg#icon-modal-send"></use>
             </svg></button>
         </form>

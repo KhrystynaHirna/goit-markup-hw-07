@@ -11,7 +11,6 @@
   align-items: center;
 }
 .social-icons__item {
-
   &:not(:last-child) {
   margin-right: 10px;
   }
@@ -32,3 +31,17 @@
   fill: var(--body-background-color);
   }
 }
+.footer__social-icons {
+  padding: 0;
+}
+.footer__social-icons--link {
+  fill: var(--body-background-color);
+  background-color: var(--icon-background-color);
+  transition: background-color 250ms var(--timing-function);
+
+  &:hover, &:focus {
+  background-color: var(--accent-color);
+  fill: var(--body-background-color);
+ }
+}
+

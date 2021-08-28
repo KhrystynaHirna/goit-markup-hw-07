@@ -1,11 +1,11 @@
 
 // Follow-section
 
-.follow {
+.footer__item--third {
   padding-left: 0;
   margin-left: auto;
 }
-.follow__form {
+.subscribe-form {
   display: flex;
 
   & .primary-button {
@@ -15,7 +15,7 @@
   margin-left: 12px;
   }
 }
-.follow__input {
+.subscribe-form__input {
   width: 358px;
   height: 50px;
   border-radius: 4px;
@@ -37,10 +37,10 @@
     border-color: var(--accent-color);
   }
 }
-.follow__text {
+.subscribe-form__text {
   padding-left: 29px;
   padding-right: 10px;
 }
-.follow__icon {
+.subscribe-form__icon {
   padding: 0;
 }

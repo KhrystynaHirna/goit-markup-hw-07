@@ -1,6 +1,6 @@
 // Footer-address block
 
-.address-container {
+.footer__item--first {
   margin-right: 70px;
 }
 .logo__part--footer {
@@ -9,7 +9,7 @@
   display: inline-block;
   margin-bottom: 20px;
 }
-.address {
+.address__list {
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
@@ -23,18 +23,7 @@
 .address__item:not(:last-child) {
   margin-bottom: 9px;
 }
-.address__link--physical {
-  color: var(--body-background-color);
-  margin: 0 0 9px;
-  transition: color 250ms var(--timing-function);
-
-  &:hover, &:focus {
-    color: var(--accent-color);
-  }
-  @extend .link;
-}
-.address__link--info {
-  color: var(--footer-info-color);
+.address__link {
   margin: 0 0 9px;
   transition: color 250ms var(--timing-function);
 
@@ -42,4 +31,10 @@
     color: var(--accent-color);
   }
   @extend .link;
+}
+.address__link--white {
+  color: var(--body-background-color);
+}
+.address__link--info {
+  color: var(--footer-info-color);
 }
