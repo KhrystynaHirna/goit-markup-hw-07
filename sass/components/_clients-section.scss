@@ -2,18 +2,21 @@
 
 .clients-section {
   padding-top: 94px;
-
 }
-.clients-logo__list {
+.clients-section__container {
+
+  @extend .container;
+}
+.clients-list {
   list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 94px;
+  padding: 0 0 94px;
+  margin: 0;
 
-  @extend .container;
 }
-.clients-logo__link {
+.clients-list__link {
   width: 170px;
   height: 92px;
   border: 1px solid var(--icon-color);
