@@ -1,5 +1,7 @@
 // navigation-block
-
+.navigation {
+  margin-left: 93px;
+}
 .navigation__list {
   font-weight: 500;
   font-size: 14px;
@@ -7,7 +9,6 @@
   letter-spacing: 0.02em;
 
   display: flex;
-  margin-left: 93px;
   align-items: center;
 
   @extend .list;
