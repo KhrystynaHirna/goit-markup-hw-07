@@ -1,0 +1,38 @@
+
+.main-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.2;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  margin: 0 auto 30px auto;
+  width: 696px;
+}
+.secondary-title {
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.footer__title {
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--body-background-color);
+}
+.modal__title {
+  margin: 0;
+  font-weight: 700;
+  margin-bottom: 12px;
+
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}

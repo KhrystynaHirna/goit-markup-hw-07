@@ -1,6 +1,16 @@
+// Product-section block
 
-// Products-overlay block
+.product-list {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  padding-right: 0;
 
+  @extend .list;
+}
+.product-list__item {
+  position: relative;
+}
 .product-list__overlay {
   width: 370px;
   height: 70px;

@@ -1,12 +1,6 @@
-// Clients-section
 
-.clients-section {
-  padding-top: 94px;
-}
-.clients-section__container {
+// Clients list
 
-  @extend .container;
-}
 .clients-list {
   list-style: none;
   display: flex;

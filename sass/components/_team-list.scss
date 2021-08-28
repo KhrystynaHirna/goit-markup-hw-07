@@ -1,12 +1,5 @@
 // Team-section block
 
-.team-section {
-  background-color: var(--team-background-color);
-  padding: 94px 0;
-}
-.team-section__container {
-  @extend .container;
-}
 .team-list {
   display: flex;
   justify-content: space-between;

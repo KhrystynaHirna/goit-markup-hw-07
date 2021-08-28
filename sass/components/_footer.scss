@@ -1,14 +1,19 @@
-// Footer-address block
+// Footer-section
 
+.footer {
+  background-color: var(--footor-background-color);
+  padding: 60px 0;
+}
+.footer__container {
+  display: flex;
+  align-items: baseline;
+
+  @extend .container;
+}
 .footer__item--first {
   margin-right: 70px;
 }
-.logo__part--footer {
-  color: var(--body-background-color);
 
-  display: inline-block;
-  margin-bottom: 20px;
-}
 .address__list {
   font-style: normal;
   font-size: 14px;
@@ -37,4 +42,8 @@
 }
 .address__link--info {
   color: var(--footer-info-color);
+}
+.footer__item--third {
+  padding-left: 0;
+  margin-left: auto;
 }
