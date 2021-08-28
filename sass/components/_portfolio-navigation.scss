@@ -1,7 +1,7 @@
 
 // Portfolio-button
 
-.portfolio-navigation {
+.portfolio-filter {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
@@ -9,13 +9,13 @@
 
   @extend .list;
 }
-.portfolio-navigation__button {
+.portfolio-filter__item {
 
  &:not(:last-child) {
    margin-right: 8px;
  }
 }
-.portfolio-navigation__button--secondary {
+.secondary-button {
   background: var(--team-background-color);
   color: var(--primary-text-color);
   font-weight: 500;

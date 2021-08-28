@@ -19,22 +19,22 @@
   margin-right: 30px;
   }
 }
-.portfolio-items__card--description {
+.portfolio-items__description {
   border: var(--card-border-color);
   border-top: none;
+  max-width: 370px;
 }
-.portfolio-items__card--name {
+.portfolio-items__name {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 
   padding: 20px 24px 4px;
-  margin-top: 0;
-  margin-bottom: 0;
-  min-width: 322px;
+  margin: 0;
+  
   color: var(--primary-text-color);
 }
-.portfolio-items__card--text {
+.portfolio-items__text {
   color: var(--paragraph-text-color);
   font-size: 16px;
   line-height: 1.9;

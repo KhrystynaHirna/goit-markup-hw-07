@@ -37,7 +37,7 @@ body {
   margin: 0 auto;
 }
 
-.list, .navigation__list, .advantages, .product-list, .team-list, .address__list, .portfolio-navigation, .portfolio-items {
+.list, .navigation__list, .advantages, .product-list, .team-list, .address__list, .portfolio-filter, .portfolio-items {
   list-style: none;
   margin: 0;
 }
@@ -1100,7 +1100,7 @@ summary {
   padding: 94px 0;
 }
 
-.portfolio-navigation {
+.portfolio-filter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1111,11 +1111,11 @@ summary {
   padding-left: 0;
 }
 
-.portfolio-navigation__button:not(:last-child) {
+.portfolio-filter__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.portfolio-navigation__button--secondary {
+.secondary-button {
   background: var(--team-background-color);
   color: var(--primary-text-color);
   font-weight: 500;
@@ -1133,7 +1133,7 @@ summary {
   transition: all 250ms var(--timing-function);
 }
 
-.portfolio-navigation__button--secondary:hover, .portfolio-navigation__button--secondary:focus {
+.secondary-button:hover, .secondary-button:focus {
   background: var(--accent-color);
   color: var(--body-background-color);
   -webkit-box-shadow: var(--secondary-button-shadow);
@@ -1158,23 +1158,22 @@ summary {
   margin-right: 30px;
 }
 
-.portfolio-items__card--description {
+.portfolio-items__description {
   border: var(--card-border-color);
   border-top: none;
+  max-width: 370px;
 }
 
-.portfolio-items__card--name {
+.portfolio-items__name {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   padding: 20px 24px 4px;
-  margin-top: 0;
-  margin-bottom: 0;
-  min-width: 322px;
+  margin: 0;
   color: var(--primary-text-color);
 }
 
-.portfolio-items__card--text {
+.portfolio-items__text {
   color: var(--paragraph-text-color);
   font-size: 16px;
   line-height: 1.9;
@@ -1199,8 +1198,8 @@ summary {
           box-shadow: var(--portfolio-card-shadow);
 }
 
-.portfolio-items__link:hover .portfolio-items__overlay,
-.portfolio-items__link:focus .portfolio-items__overlay {
+.portfolio-items__link:hover .overlay,
+.portfolio-items__link:focus .overlay {
   opacity: 1;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
@@ -1211,7 +1210,7 @@ summary {
   overflow: hidden;
 }
 
-.portfolio-items__overlay {
+.overlay {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1224,7 +1223,7 @@ summary {
   transition: transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
 }
 
-.portfolio-items__overlay--text {
+.overlay__text {
   padding: 63px 24px;
   margin: 0;
   font-style: normal;
