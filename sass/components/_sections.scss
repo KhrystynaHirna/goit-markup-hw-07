@@ -1,3 +1,6 @@
+
+
+// Hero-section
 .main-section {
   background-color: var(--footor-background-color);
   color: var(--body-background-color);
@@ -16,12 +19,17 @@
   background-position: center;
   background-size: 1600px;
 }
+
+
+// Advantage-section
 .advantage-section {
     padding: 94px 0 47px 0; 
 }
 .advantage-section__container {
   @extend .container; 
 }
+
+// Product-section
 .product-section {
   padding: 47px 0 94px 0;
 }
@@ -29,6 +37,7 @@
   @extend .container;
 }
 
+// Team-section
 .team-section {
   background-color: var(--team-background-color);
   padding: 94px 0;
@@ -36,17 +45,16 @@
 .team-section__container {
   @extend .container;
 }
-// Clients-section
 
+// Clients-section
 .clients-section {
   padding-top: 94px;
 }
 .clients-section__container {
-
   @extend .container;
 }
-// Portfolio-section
 
+// Portfolio-section
 .portfolio-section {
   padding: 94px 0; 
 }
