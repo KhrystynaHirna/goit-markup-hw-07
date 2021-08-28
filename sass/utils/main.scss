@@ -2,29 +2,21 @@
 @import '../base/normalize';
 @import '../components/page-header';
 @import '../components/logo';
-@import '../components/header-navigation';
-@import '../components/header-info' ;
-@import '../components/hero-section' ;
-@import '../components/advantage-section' ;
-@import '../components/advantage-icons' ;
-@import '../components/products-section' ;
-@import '../components/products-overlay' ;
-@import '../components/team-section' ;
+@import '../components/navigation';
+@import '../components/advantage-list' ;
+@import '../components/product-list' ;
+@import '../components/team-list' ;
 @import '../components/social-icons' ;
-@import '../components/clients-section' ;
-@import '../components/footer-container' ;
-@import '../components/footer-address' ;
-@import '../components/footer-join' ;
-@import '../components/footer-follow' ;
+@import '../components/clients-list' ;
+@import '../components/footer' ;
+@import '../components/subscribe-form' ;
 @import '../components/modal-backdrop' ;
-@import '../components/modal-window' ;
 @import '../components/modal-form' ;
-@import '../components/portfolio-container';
-@import '../components/portfolio-navigation' ;
-@import '../components/portfolio-cards' ;
-@import '../components/portfolio-overlay' ;
+@import '../components/portfolio-items' ;
 @import '../components/common' ;
 @import '../components/titles' ;
+@import '../components/sections';
+@import '../components/buttons';
 
 
 
