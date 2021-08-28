@@ -12,9 +12,10 @@
    color: var(--accent-color);   
   }
   @extend .link;
-}
 
-.logo__part {
+  & .logo--black {
   color: var(--logo-black-color);
   display: inline-block;
+  }
 }
+

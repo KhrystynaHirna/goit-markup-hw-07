@@ -1,7 +1,7 @@
 
 // Products-overlay block
 
-.product__overlay {
+.product-list__overlay {
   width: 370px;
   height: 70px;
   position: absolute;
@@ -12,7 +12,7 @@
   );
   bottom: 0;
 }
-.product__overlay--text {
+.product-list__text {
   text-transform: uppercase;
   color: var(--body-background-color);
   font-size: 14px;

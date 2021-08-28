@@ -6,7 +6,7 @@
 .product-section__container {
   @extend .container;
 }
-.product {
+.product-list {
   display: flex;
   justify-content: space-between;
   padding-left: 0;
@@ -14,6 +14,6 @@
 
   @extend .list;
 }
-.product__item {
+.product-list__item {
   position: relative;
 }
