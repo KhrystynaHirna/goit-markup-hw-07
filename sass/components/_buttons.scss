@@ -38,7 +38,7 @@
   margin-top: 0;
   cursor: pointer;
 
-  transition: all 250ms var(--timing-function);
+  @include transition (all);
 
   &:hover, &:focus {
     background: var(--accent-color);
@@ -62,8 +62,8 @@
 
   &__icon { 
    fill: var(--logo-black-color);
-  transition: fill 250ms var(--timing-function);
-
+   @include transition (fill);
+   
   &:hover, &:focus {
   fill: var(--accent-color);
   }

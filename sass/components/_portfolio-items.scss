@@ -65,9 +65,9 @@
   text-decoration: none;
   display: block;
 
-  transition: transform 250ms var(--timing-function),
-    opasity 250ms var(--timing-function),
-    box-shadow 250ms var(--timing-function);
+  @include transition (transform);
+  @include transition (opasity);
+  @include transition (box-shadow);
 
     &:hover, &:focus {
        box-shadow: var(--portfolio-card-shadow);
@@ -92,7 +92,7 @@
     rgba(33, 150, 243, 0.9)
   );
   opacity: 0;
-  transition: transform 250ms var(--timing-function);
+  @include transition (transform);
 }
 .overlay__text {
   padding: 63px 24px;

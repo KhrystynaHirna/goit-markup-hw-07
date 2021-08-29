@@ -590,8 +590,10 @@ summary {
           align-items: center;
   border-radius: 50%;
   fill: var(--icon-color);
-  -webkit-transition: fill 250ms var(--timing-function), background-color 250ms var(--timing-function);
-  transition: fill 250ms var(--timing-function), background-color 250ms var(--timing-function);
+  -webkit-transition: fill 250ms var(--timing-function);
+  transition: fill 250ms var(--timing-function);
+  -webkit-transition: background-color 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function);
 }
 
 .social-icons__link:hover, .social-icons__link:focus {
@@ -642,8 +644,10 @@ summary {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: fill 250ms var(--timing-function), border-color 250ms var(--timing-function);
-  transition: fill 250ms var(--timing-function), border-color 250ms var(--timing-function);
+  -webkit-transition: fill 250ms var(--timing-function);
+  transition: fill 250ms var(--timing-function);
+  -webkit-transition: border-color 250ms var(--timing-function);
+  transition: border-color 250ms var(--timing-function);
 }
 
 .clients-list__link:hover, .clients-list__link:focus {
@@ -1021,10 +1025,16 @@ summary {
 .portfolio-items__link {
   text-decoration: none;
   display: block;
-  -webkit-transition: opasity 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function), -webkit-box-shadow 250ms var(--timing-function);
-  transition: opasity 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function), -webkit-box-shadow 250ms var(--timing-function);
-  transition: transform 250ms var(--timing-function), opasity 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
-  transition: transform 250ms var(--timing-function), opasity 250ms var(--timing-function), box-shadow 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function), -webkit-box-shadow 250ms var(--timing-function);
+  -webkit-transition: -webkit-transform 250ms var(--timing-function);
+  transition: -webkit-transform 250ms var(--timing-function);
+  transition: transform 250ms var(--timing-function);
+  transition: transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
+  -webkit-transition: opasity 250ms var(--timing-function);
+  transition: opasity 250ms var(--timing-function);
+  -webkit-transition: -webkit-box-shadow 250ms var(--timing-function);
+  transition: -webkit-box-shadow 250ms var(--timing-function);
+  transition: box-shadow 250ms var(--timing-function);
+  transition: box-shadow 250ms var(--timing-function), -webkit-box-shadow 250ms var(--timing-function);
 }
 
 .portfolio-items__link:hover, .portfolio-items__link:focus {

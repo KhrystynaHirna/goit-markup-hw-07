@@ -26,7 +26,7 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   outline: none;
-  transition: border-color 250ms var(--timing-function);
+ @include transition (border-color);
 
   &:hover, &:focus {
     border-color: var(--accent-color);

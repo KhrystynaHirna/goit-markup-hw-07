@@ -37,7 +37,7 @@
 }
 .address__link {
   margin: 0 0 9px;
-  transition: color 250ms var(--timing-function);
+  @include transition (color);
 
    &:hover, &:focus {
     color: var(--accent-color);

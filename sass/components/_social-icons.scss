@@ -28,7 +28,8 @@
   @include border-radius (50%);
 
   fill: var(--icon-color);
-  transition: fill 250ms var(--timing-function), background-color 250ms var(--timing-function);
+  @include transition (fill);
+  @include transition (background-color);
 
   &:hover, &:focus {
   background-color: var(--accent-color);

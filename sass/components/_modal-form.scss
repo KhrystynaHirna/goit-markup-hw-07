@@ -27,7 +27,7 @@
   height: 40px;
   width: 448px;
   outline: none;
-  transition: border-color 250ms var(--timing-function);
+  @include transition (border-color);
 
   &:hover, &:focus {
     border-color: var(--accent-color);
@@ -43,7 +43,7 @@
   top: 30px;
   left: 15px;
   fill: var(--primary-text-color);
-  transition: fill 250ms var(--timing-function);
+  @include transition (fill);
 }
 .form-field__comment {
   margin-bottom: 20px;
@@ -60,7 +60,7 @@
   width: 100%;
   outline: none;
   color: rgba(117, 117, 117, 0.5);
-  transition: border-color 250ms var(--timing-function);
+  @include transition (border-color);
 
   &:hover, &:focus {
      border-color: var(--accent-color);
@@ -84,7 +84,7 @@
   background: var(--accent-color);
   @include border-radius (2px);
   border: none;
-  transition: background-color 250ms var(--timing-function);
+  @include transition (background-color);
   }
 }
 .form-field__checkbox-icon {
