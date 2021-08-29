@@ -25,7 +25,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
+  @include border-radius (50%);
 
   fill: var(--icon-color);
   transition: fill 250ms var(--timing-function), background-color 250ms var(--timing-function);
