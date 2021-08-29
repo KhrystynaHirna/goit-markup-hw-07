@@ -9,6 +9,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &--footer {
+  padding: 0;
+ }
 }
 .social-icons__item {
   &:not(:last-child) {
@@ -31,19 +35,15 @@
   fill: var(--body-background-color);
   }
 }
-
-// Footer social-icons
-.footer__social-icons {
-  padding: 0;
-}
-.footer__social-icons--link {
-  fill: var(--body-background-color);
-  background-color: var(--icon-background-color);
-  transition: background-color 250ms var(--timing-function);
-
+.social-icons__link--fill {
+  fill: var(--icon-color);
   &:hover, &:focus {
-  background-color: var(--accent-color);
   fill: var(--body-background-color);
  }
+}
+
+.social-icons__link--with-background {
+  fill: var(--body-background-color);
+  background-color: var(--icon-background-color);
 }
 

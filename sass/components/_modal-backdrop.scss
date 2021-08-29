@@ -34,11 +34,14 @@
   margin: 8px; 
   }
 }
-.close-button__icon {
-   fill: var(--logo-black-color);
-  transition: fill 250ms var(--timing-function);
+.modal__title {
+  margin: 0;
+  font-weight: 700;
+  margin-bottom: 12px;
 
-  &:hover, &:focus {
-  fill: var(--accent-color);
-  }
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }

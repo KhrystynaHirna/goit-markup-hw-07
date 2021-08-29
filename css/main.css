@@ -18,6 +18,15 @@
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.header-info__link, .navigation__link, .navigation__link--current, .logo, .address__link {
+  text-decoration: none;
+}
+
+.navigation__list, .advantage-list, .product-list, .team-list, .address__list, .portfolio-filter, .portfolio-items {
+  list-style: none;
+  margin: 0;
+}
+
 /*! modern-normalize v0.6.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -393,6 +402,7 @@ summary {
 }
 
 .logo {
+  margin: 0;
   color: var(--accent-color);
   font-family: 'Raleway', 'Arial', sans-serif;
   font-size: 26px;
@@ -406,12 +416,12 @@ summary {
   color: var(--accent-color);
 }
 
-.logo .logo--black {
+.logo--black {
   color: var(--logo-black-color);
   display: inline-block;
 }
 
-.logo .logo--white {
+.logo--white {
   color: var(--body-background-color);
   display: inline-block;
   margin-bottom: 20px;
@@ -559,6 +569,10 @@ summary {
           align-items: center;
 }
 
+.social-icons--footer {
+  padding: 0;
+}
+
 .social-icons__item:not(:last-child) {
   margin-right: 10px;
 }
@@ -586,20 +600,17 @@ summary {
   fill: var(--body-background-color);
 }
 
-.footer__social-icons {
-  padding: 0;
+.social-icons__link--fill {
+  fill: var(--icon-color);
 }
 
-.footer__social-icons--link {
+.social-icons__link--fill:hover, .social-icons__link--fill:focus {
+  fill: var(--body-background-color);
+}
+
+.social-icons__link--with-background {
   fill: var(--body-background-color);
   background-color: var(--icon-background-color);
-  -webkit-transition: background-color 250ms var(--timing-function);
-  transition: background-color 250ms var(--timing-function);
-}
-
-.footer__social-icons--link:hover, .footer__social-icons--link:focus {
-  background-color: var(--accent-color);
-  fill: var(--body-background-color);
 }
 
 .clients-list {
@@ -644,6 +655,14 @@ summary {
 .footer {
   background-color: var(--footor-background-color);
   padding: 60px 0;
+}
+
+.footer__title {
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--body-background-color);
 }
 
 .footer__container {
@@ -786,24 +805,15 @@ summary {
   margin: 8px;
 }
 
-.close-button__icon {
-  fill: var(--logo-black-color);
-  -webkit-transition: fill 250ms var(--timing-function);
-  transition: fill 250ms var(--timing-function);
-}
-
-.close-button__icon:hover, .close-button__icon:focus {
-  fill: var(--accent-color);
-}
-
-.modal__form {
-  width: 448px;
-  height: 342px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: relative;
+.modal__title {
+  margin: 0;
+  font-weight: 700;
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
 
 .form-field {
@@ -868,7 +878,7 @@ summary {
   margin-bottom: 20px;
 }
 
-.form-field__commentarea {
+.form-field__textarea {
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -884,7 +894,7 @@ summary {
   transition: border-color 250ms var(--timing-function);
 }
 
-.form-field__commentarea:hover, .form-field__commentarea:focus {
+.form-field__textarea:hover, .form-field__textarea:focus {
   border-color: var(--accent-color);
 }
 
@@ -911,7 +921,7 @@ summary {
   position: absolute;
 }
 
-.form-field__checkbox:checked + .form-field__checkbox--icon {
+.form-field__checkbox:checked + .form-field__checkbox-icon {
   background: var(--accent-color);
   border-radius: 2px;
   border: none;
@@ -919,7 +929,7 @@ summary {
   transition: background-color 250ms var(--timing-function);
 }
 
-.form-field__checkbox--icon {
+.form-field__checkbox-icon {
   width: 16px;
   height: 15px;
   fill: var(--body-background-color);
@@ -936,7 +946,7 @@ summary {
   display: flex;
 }
 
-.form-field__checkbox--text {
+.form-field__checkbox-text {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -944,8 +954,12 @@ summary {
   color: var(--paragraph-text-color);
 }
 
-.form-field__checkbox--link {
+.form-field__agree-link {
   color: var(--accent-color);
+}
+
+.form-field__button {
+  text-align: center;
 }
 
 .portfolio-filter {
@@ -1057,13 +1071,6 @@ summary {
   color: var(--body-background-color);
 }
 
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 body {
   background-color: var(--body-background-color);
   color: var(--primary-text-color);
@@ -1074,17 +1081,6 @@ body {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-}
-
-.list, .navigation__list, .advantage-list, .product-list, .team-list, .address__list, .portfolio-filter, .portfolio-items {
-  list-style: none;
-  margin: 0;
-}
-
-.link, .header-info__link, .navigation__link, .navigation__link--current, .logo, .address__link {
-  text-decoration: none;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .is-hidden {
@@ -1113,25 +1109,6 @@ img {
   letter-spacing: 0.03em;
   margin-top: 0;
   margin-bottom: 50px;
-}
-
-.footer__title {
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--body-background-color);
-}
-
-.modal__title {
-  margin: 0;
-  font-weight: 700;
-  margin-bottom: 12px;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
 }
 
 .main-section {
@@ -1175,8 +1152,6 @@ img {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
-  -webkit-box-shadow: var(--primary-button-shadow);
-          box-shadow: var(--primary-button-shadow);
   border: none;
   border-radius: 4px;
   padding: 10px 32px;
@@ -1185,6 +1160,11 @@ img {
   text-align: center;
   margin-top: 0;
   cursor: pointer;
+}
+
+.primary-button--shadow {
+  -webkit-box-shadow: var(--primary-button-shadow);
+          box-shadow: var(--primary-button-shadow);
 }
 
 .secondary-button {
@@ -1212,15 +1192,6 @@ img {
           box-shadow: var(--secondary-button-shadow);
 }
 
-.form-field__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .close-button {
   fill: var(--logo-black-color);
   width: 30px;
@@ -1235,5 +1206,15 @@ img {
   background: var(--body-background-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+}
+
+.close-button__icon {
+  fill: var(--logo-black-color);
+  -webkit-transition: fill 250ms var(--timing-function);
+  transition: fill 250ms var(--timing-function);
+}
+
+.close-button__icon:hover, .close-button__icon:focus {
+  fill: var(--accent-color);
 }
 /*# sourceMappingURL=main.css.map */

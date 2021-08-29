@@ -4,6 +4,13 @@
   background-color: var(--footor-background-color);
   padding: 60px 0;
 }
+.footer__title {
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--body-background-color);
+}
 .footer__container {
   display: flex;
   align-items: baseline;
@@ -23,7 +30,7 @@
   padding: 0;
   width: 231px;
 
-  @extend .list;
+  @extend %list;
 }
 .address__item:not(:last-child) {
   margin-bottom: 9px;
@@ -35,7 +42,7 @@
    &:hover, &:focus {
     color: var(--accent-color);
   }
-  @extend .link;
+  @extend %link;
 }
 .address__link--white {
   color: var(--body-background-color);

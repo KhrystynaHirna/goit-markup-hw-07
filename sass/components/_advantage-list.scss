@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
 
-  @extend .list;
+  @extend %list;
 }
 .advantage-list__item {
   max-width: 270px;

@@ -5,8 +5,8 @@
   justify-content: space-between;
   padding-left: 0;
   padding-right: 0;
-
-  @extend .list;
+  
+  @extend %list;
 }
 .product-list__item {
   position: relative;

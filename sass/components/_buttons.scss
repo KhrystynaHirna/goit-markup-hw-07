@@ -9,7 +9,9 @@
   line-height: 1.9;
   letter-spacing: 0.06em;
 
+  &--shadow {
   box-shadow: var(--primary-button-shadow);
+  }
   border: none;
   border-radius: 4px;
   padding: 10px 32px;
@@ -44,12 +46,8 @@
   box-shadow: var(--secondary-button-shadow); 
   }
 }
-// Modal buttons
+// Modal button
 
-.form-field__button {
-  display: flex;
-  justify-content: center;
-}
 .close-button {
   fill: var(--logo-black-color);
   width: 30px;
@@ -61,4 +59,13 @@
   background: var(--body-background-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+
+  &__icon { 
+   fill: var(--logo-black-color);
+  transition: fill 250ms var(--timing-function);
+
+  &:hover, &:focus {
+  fill: var(--accent-color);
+  }
+ }
 }

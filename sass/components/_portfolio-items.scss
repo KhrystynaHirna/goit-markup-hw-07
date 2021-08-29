@@ -7,7 +7,7 @@
   margin-bottom: 50px;
   padding: 0 0 50px;
 
-  @extend .list;
+  @extend %list;
 }
 .portfolio-filter__item {
 
@@ -24,7 +24,7 @@
   padding-right: 0;
   padding-left: 0;
 
-  @extend .list;
+  @extend %list;
 }
 .portfolio-items__card {
 

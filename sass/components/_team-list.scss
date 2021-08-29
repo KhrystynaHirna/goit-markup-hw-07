@@ -7,7 +7,7 @@
   justify-content: space-between;
   padding-left: 0;
 
-  @extend .list;
+  @extend %list;
 }
 .team-list__card {
   text-align: center;

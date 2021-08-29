@@ -43,7 +43,7 @@
   &:hover, &:focus {
   color: var(--accent-color);  
   }
-  @extend .link;
+  @extend %link;
 }
 .header-info__icon {
   fill: currentColor;
