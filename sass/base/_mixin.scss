@@ -1,7 +1,10 @@
+
+@mixin transition ($transition-property) {
+    transition: $transition-property 250ms var(--timing-function);    
+}
+@mixin border ($size, $color) {
+    border: $size solid $color;
+}
 @mixin border-radius ($radius) {
     border-radius: $radius; 
-}
-@mixin transition ($transition-property) {
-    transition: $transition-property 250ms var(--timing-function);
-    
 }
