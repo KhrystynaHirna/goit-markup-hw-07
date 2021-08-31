@@ -3,7 +3,7 @@
 
 .clients-list {
   list-style: none;
-  display: flex;
+  @extend %d-flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 0 94px;
@@ -16,8 +16,7 @@
   @include border (1px, var(--icon-color));
   @include border-radius (4px);
   fill: var(--icon-color);
-
-  display: flex;
+  @extend %d-flex;
   justify-content: center;
   align-items: center;
 

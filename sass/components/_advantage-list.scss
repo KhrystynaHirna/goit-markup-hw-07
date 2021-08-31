@@ -2,9 +2,8 @@
 
 .advantage-list {
   padding: 0;
-  display: flex;
   justify-content: space-between;
-
+  @extend %d-flex;
   @extend %list;
 }
 .advantage-list__item {
@@ -34,7 +33,7 @@
   height: 120px;
   @include border-radius (4px);
 
-  display: flex;
+  @extend %d-flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;

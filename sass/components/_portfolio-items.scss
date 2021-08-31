@@ -2,7 +2,7 @@
 // Portfolio
 
 .portfolio-filter {
-  display: flex;
+  @extend %d-flex;
   justify-content: center;
   margin-bottom: 50px;
   padding: 0 0 50px;
@@ -18,7 +18,7 @@
 // Portfolio-cards
 
 .portfolio-items {
-  display: flex;
+  @extend %d-flex;
   flex-wrap: wrap;
 
   padding-right: 0;

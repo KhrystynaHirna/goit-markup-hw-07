@@ -8,3 +8,15 @@
 @mixin border-radius ($radius) {
     border-radius: $radius; 
 }
+
+
+
+@mixin flex ($jc: false, $ai: false) {
+    display: flex;
+    @if ($jc) {
+        justify-content: $js;
+    }
+     @if ($ai) {
+        align-items: $ai;
+    }
+}

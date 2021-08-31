@@ -1,7 +1,7 @@
 // Product-section 
 
 .product-list {
-  display: flex;
+  @extend %d-flex;
   justify-content: space-between;
   padding-left: 0;
   padding-right: 0;

@@ -4,7 +4,7 @@
     border-bottom: var(--header-border-color);
 }
 .page-header__container {
-  display: flex;
+  @extend %d-flex;
   align-items: center;
   
   @extend .container;
@@ -19,12 +19,12 @@
 
   padding: 0;
   margin-left: auto;
-  display: flex;
+  @extend %d-flex;
   align-items: center;
 }
 .header-info__item {
   color: var(--paragraph-text-color);
-  display: flex;
+  @extend %d-flex;
   align-items: center;
 
   &:hover, &:focus {
@@ -36,7 +36,7 @@
 }
 .header-info__link {
   color: var(--paragraph-text-color);
-  display: flex;
+  @extend %d-flex;
   align-items: center;
   @include transition (color);
 

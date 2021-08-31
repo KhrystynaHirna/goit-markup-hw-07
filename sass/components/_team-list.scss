@@ -3,7 +3,7 @@
 // Team-section
 
 .team-list {
-  display: flex;
+  @extend %d-flex;
   justify-content: space-between;
   padding-left: 0;
 

@@ -53,7 +53,7 @@
   width: 30px;
   height: 30px;
   @include border-radius (50%);
-  display: flex;
+  @extend %d-flex;
   align-items: center;
 
   background: var(--body-background-color);

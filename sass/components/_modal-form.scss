@@ -2,7 +2,7 @@
 
 
 .form-field {
-  display: flex;
+  @extend %d-flex;
   flex-direction: column;
   width: 100%;
   position: relative;
@@ -20,7 +20,7 @@
   padding-bottom: 4px;
 }
 .form-field__input {
-  display: flex;
+  @extend %d-flex;
   padding: 0 20px 0 42px;
   @include border (1px, rgba(33, 33, 33, 0.2));
   @include border-radius (4px);
@@ -70,7 +70,7 @@
   margin-bottom: 20px;
 }
 .form-field__policy {
-  display: flex;
+  @extend %d-flex;
   align-items: center;
   justify-content: center;
 }
@@ -97,7 +97,7 @@
 
   align-items: center;
   justify-content: center;
-  display: flex;
+  @extend %d-flex;
 }
 .form-field__checkbox-text {
   font-size: 14px;
