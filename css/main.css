@@ -612,6 +612,8 @@ summary {
 .clients-list__link {
   width: 170px;
   height: 92px;
+  border-width: 1px;
+  border-color: var(--icon-color);
   border: 1px solid var(--icon-color);
   border-radius: 4px;
   fill: var(--icon-color);
@@ -708,6 +710,8 @@ summary {
   width: 358px;
   height: 50px;
   border-radius: 4px;
+  border-width: 1px;
+  border-color: rgba(255, 255, 255, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -817,6 +821,8 @@ summary {
 
 .form-field__input {
   padding: 0 20px 0 42px;
+  border-width: 1px;
+  border-color: rgba(33, 33, 33, 0.2);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 40px;
@@ -855,6 +861,8 @@ summary {
 
 .form-field__textarea {
   resize: none;
+  border-width: 1px;
+  border-color: rgba(33, 33, 33, 0.2);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 120px;
@@ -910,6 +918,8 @@ summary {
   height: 15px;
   fill: var(--body-background-color);
   border-radius: 2px;
+  border-width: 2px;
+  border-color: var(--logo-black-color);
   border: 2px solid var(--logo-black-color);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -965,6 +975,7 @@ summary {
 .portfolio-items__description {
   border: var(--card-border-color);
   border-top: none;
+  border: false solid false;
   max-width: 370px;
 }
 
@@ -998,8 +1009,8 @@ summary {
   transition-property: transform;
   transition-property: transform, -webkit-transform;
   transition: 250ms var(--timing-function);
-  -webkit-transition-property: opasity;
-  transition-property: opasity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
   transition: 250ms var(--timing-function);
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
@@ -1182,6 +1193,8 @@ img {
       -ms-flex-align: center;
           align-items: center;
   background: var(--body-background-color);
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }

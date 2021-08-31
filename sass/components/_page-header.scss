@@ -1,7 +1,7 @@
 // header-block
 
 .page-header {
-    border-bottom: var(--header-border-color);
+  @include border ($use-bb:(var(--header-border-color)));
 }
 .page-header__container {
   @include flex ($ai: center);

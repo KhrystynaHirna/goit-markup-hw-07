@@ -12,7 +12,7 @@
   width: 170px;
   height: 92px;
   @include border (1px, var(--icon-color));
-  @include border-radius (4px);
+  border-radius: 4px;
   fill: var(--icon-color);
   @include flex ($jc: center, $ai: center );
   @include transition (fill);

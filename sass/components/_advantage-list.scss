@@ -30,7 +30,7 @@
   color: currentColor;
   width: 270px;
   height: 120px;
-  @include border-radius (4px);
+  border-radius: 4px;
   @include flex ($jc: center, $ai: center);
   margin-bottom: 30px;
   padding: 0;

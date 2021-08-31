@@ -5,14 +5,6 @@
         transition-property: $transition-property;
     }   
 }
-
-@mixin border ($size, $color) {
-    border: $size solid $color;
-}
-@mixin border-radius ($radius) {
-    border-radius: $radius; 
-}
-
 @mixin flex ($jc: false, $ai: false, $fd: false, $fw: false) {
     @extend %d-flex;
     @if ($jc) {
@@ -28,3 +20,21 @@
         flex-wrap: $fw;
     }
 }
+@mixin border ($size:false, $color:false, $use-bb:false, $use-bt:false) {
+    @if ($size) {
+        border-width: $size;
+    }
+    @if ($color) {
+        border-color: $color;
+    }
+    @if ($use-bt) {
+        border-top: $use-bt;
+    } 
+     @if ($use-bb) {
+        border-bottom: $use-bb;
+    } 
+    @else {
+        border: $size solid $color;
+    }
+} 
+

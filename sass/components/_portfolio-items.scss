@@ -33,7 +33,7 @@
 }
 .portfolio-items__description {
   border: var(--card-border-color);
-  border-top: none;
+  @include border ($use-bt: none);
   max-width: 370px;
 }
 .portfolio-items__name {
@@ -61,7 +61,9 @@
   text-decoration: none;
   display: block;
 
-  @include transition ((transform), (opasity), (box-shadow));
+  @include transition (transform);
+  @include transition (opacity);
+  @include transition (box-shadow);
 
     &:hover, &:focus {
        box-shadow: var(--portfolio-card-shadow);
