@@ -1,7 +1,11 @@
 
 @mixin transition ($transition-property) {
-    transition: $transition-property 250ms var(--timing-function);    
+    transition: 250ms var(--timing-function); 
+    @if (length($transition-property) > 0) {
+        transition-property: $transition-property;
+    }   
 }
+
 @mixin border ($size, $color) {
     border: $size solid $color;
 }
@@ -9,14 +13,18 @@
     border-radius: $radius; 
 }
 
-
-
-@mixin flex ($jc: false, $ai: false) {
-    display: flex;
+@mixin flex ($jc: false, $ai: false, $fd: false, $fw: false) {
+    @extend %d-flex;
     @if ($jc) {
-        justify-content: $js;
+        justify-content: $jc;
     }
      @if ($ai) {
         align-items: $ai;
+    }
+    @if ($fd) {
+        flex-direction: $fd;
+    }
+    @if ($fw) {
+        flex-wrap: $fw;
     }
 }

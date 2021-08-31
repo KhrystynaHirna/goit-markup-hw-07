@@ -2,8 +2,7 @@
 // Portfolio
 
 .portfolio-filter {
-  @extend %d-flex;
-  justify-content: center;
+  @include flex ($jc: center);
   margin-bottom: 50px;
   padding: 0 0 50px;
 
@@ -18,12 +17,9 @@
 // Portfolio-cards
 
 .portfolio-items {
-  @extend %d-flex;
-  flex-wrap: wrap;
-
+  @include flex ($fw: wrap);
   padding-right: 0;
   padding-left: 0;
-
   @extend %list;
 }
 .portfolio-items__card {
@@ -65,9 +61,7 @@
   text-decoration: none;
   display: block;
 
-  @include transition (transform);
-  @include transition (opasity);
-  @include transition (box-shadow);
+  @include transition ((transform), (opasity), (box-shadow));
 
     &:hover, &:focus {
        box-shadow: var(--portfolio-card-shadow);

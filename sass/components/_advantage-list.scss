@@ -2,8 +2,7 @@
 
 .advantage-list {
   padding: 0;
-  justify-content: space-between;
-  @extend %d-flex;
+  @include flex ($jc: space-between);
   @extend %list;
 }
 .advantage-list__item {
@@ -32,14 +31,11 @@
   width: 270px;
   height: 120px;
   @include border-radius (4px);
-
-  @extend %d-flex;
-  justify-content: center;
-  align-items: center;
+  @include flex ($jc: center, $ai: center);
   margin-bottom: 30px;
   padding: 0;
 }
 .advantage-list__svg {
+  @include flex ($jc: center);
   text-align: center;
-  justify-content: center;
 }

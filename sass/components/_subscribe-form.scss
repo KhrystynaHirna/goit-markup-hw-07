@@ -4,8 +4,7 @@
   @extend %d-flex;
 
   & .primary-button {
-  @extend %d-flex;
-  align-items: center;
+  @include flex ($ai: center);
   padding: 0;
   margin-left: 12px;
   }
